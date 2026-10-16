@@ -1,4 +1,3 @@
-```java
 package calculator;
 
 import org.junit.jupiter.api.Test;
@@ -34,4 +33,3 @@ class CalculatorTest {
             () -> c.divide(10, 0));
     }
 }
-```
