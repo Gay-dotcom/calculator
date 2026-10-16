@@ -1,13 +1,28 @@
-package main;
-
 public class Calculator {
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 5;
 
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public static double divide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        return (double) a / b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(add(10, 5));
+        System.out.println(subtract(10, 5));
+        System.out.println(multiply(10, 5));
+        System.out.println(divide(10, 5));
     }
 }
